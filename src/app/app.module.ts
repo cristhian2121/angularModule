@@ -4,21 +4,17 @@ import { AppRoutingModule } from './routing.module';
 
 import { AppComponent } from './app.component';
 import { OtherComponent } from './components/other.component';
-import { NavBarComponent } from './shared/nav-bar/nav-bar.component';
-
-// modules
-import { HomeModule } from './modules/home/home/home.module';
-import { InvoiceModule } from './modules/invoice/invoice/invoice.module';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavBarComponent,
     OtherComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    SharedModule
     // HomeModule,
     // InvoiceModule
   ],
